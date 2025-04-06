@@ -1,0 +1,31 @@
+Customer_ID,Product_ID,Category,Subcategory,Probability
+C1000,P2603,Books,biography,1.0
+C1000,P11404,Fashion,jeans,1.0
+C1000,P4993,Fashion,jeans,1.0
+C1001,P2603,Books,biography,1.0
+C1001,P9920,Fashion,t-shirt,1.0
+C1001,P9383,Fashion,t-shirt,1.0
+C1002,P2919,Electronics,smartphone,0.99
+C1002,P5946,Electronics,smartphone,0.99
+C1002,P7812,Electronics,smartphone,0.98
+C1003,P3021,Home Decor,wall art,0.99
+C1003,P10098,Home Decor,wall art,0.99
+C1003,P2360,Home Decor,wall art,0.99
+C1004,P8687,Fashion,shoes,1.0
+C1004,P2896,Home Decor,lamp,1.0
+C1004,P11519,Fashion,shoes,1.0
+C1005,P9269,Home Decor,curtains,1.0
+C1005,P8129,Home Decor,curtains,1.0
+C1005,P3523,Home Decor,curtains,0.99
+C1006,P9313,Home Decor,cushions,1.0
+C1006,P5642,Home Decor,cushions,1.0
+C1006,P11704,Home Decor,cushions,1.0
+C1007,P3021,Home Decor,wall art,0.99
+C1007,P10098,Home Decor,wall art,0.99
+C1007,P2360,Home Decor,wall art,0.99
+C1008,P7632,Home Decor,lamp,1.0
+C1008,P2896,Home Decor,lamp,1.0
+C1008,P7221,Home Decor,lamp,1.0
+C1009,P4767,Fitness,resistance bands,1.0
+C1009,P9700,Fitness,resistance bands,0.99
+C1009,P4746,Fitness,resistance bands,0.99

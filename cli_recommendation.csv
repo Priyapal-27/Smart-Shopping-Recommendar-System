@@ -1,0 +1,4 @@
+Customer_ID,Product_ID,Category,Subcategory,Probability
+C1007,P2360,Home Decor,wall art,0.99
+C1007,P2403,Home Decor,wall art,0.99
+C1007,P3021,Home Decor,wall art,0.99
