@@ -1,70 +1,73 @@
-# 🛍️ Smart Shopping: Data and AI for Personalized E-Commerce
+# 🛒 Smart Shopping Recommender System
 
-### 🚀 Hack the Future: A Gen AI Sprint Powered by Data
-
-Smart Shopping is an intelligent recommendation system designed to revolutionize e-commerce using the power of **Generative AI** and **Data Analytics**. It delivers hyper-personalized product suggestions based on customer segments, seasonal trends, and behavioral patterns.
+A personalized product recommendation system designed to enhance customer experience using data-driven insights. Built as part of the Gen AI Sprint Hackathon, the system processes customer behavior and provides top product suggestions using Python.
 
 ---
 
-## 📌 Key Features
+## 📌 Project Features
 
-- 🎯 **Segment-Based Filtering**: Personalized recommendations for students, professionals, and parents.
-- ❄️ **Seasonal Offers**: Smart suggestions tailored to festivals, weather, or occasions (e.g., Diwali, Winter).
-- 🧠 **Gen AI Chatbot**: Understands natural language queries like "I want a summer bag under ₹500".
-- 📊 **Data-Driven Insights**: Highlights trending products, top picks, and personalized bundles.
-- 🖼️ **Visual Recommendations** _(Optional)_: Gen AI-generated outfit/product mockups.
-
----
-
-## 💡 How It Works
-
-1. **Customer Data Input**: Via CLI, GUI, or chatbot.
-2. **Recommendation Engine**:
-   - Matches customer ID with historical and simulated purchase data.
-   - Filters by segment and season.
-3. **Smart Suggestions**:
-   - Top 3 high-probability product recommendations.
-   - Displayed in terminal, GUI (Tkinter), and optionally exported to CSV/Excel.
+- Data preprocessing and filtering
+- Recommendation generation using customer-product interaction data
+- Graphical User Interface (GUI) for ease of use
+- Exportable results in CSV/Excel
+- Visual recommendation charts
 
 ---
 
-## 🧰 Tech Stack
+## 🗂️ Project Structure
 
-| Layer         | Tech Used                                        |
-| ------------- | ------------------------------------------------ |
-| Frontend      | Tkinter GUI / CLI                                |
-| Backend       | Python, Pandas                                   |
-| Data          | CSV (Simulated data for customers & products)    |
-| AI Features   | OpenAI API (optional), Prompt design             |
-| Visualization | Excel / Matplotlib / Future: Streamlit Dashboard |
+├── data/ # Input datasets
+├── scripts/ # Python scripts (logic + GUI)
+├── notebooks/ # Development notebooks
+├── outputs/ # Recommendation results
+├── images/ # Visual assets and charts
+├── README.md # Project overview
+├── requirements.txt # Python dependencies
+
 
 ---
 
-## 🧪 How to Run
+## 📥 Installation
 
-### ▶️ CLI Version
-
+### 1. Clone the Repository
 ```bash
-python cli_recommendation.py
+git clone https://github.com/Priyapal-27/Smart-Shopping-Recommendar-System.git
+cd Smart-Shopping-Recommendar-System
 
-🖥️ GUI Version (Tkinter)
-python gui_recommendation.py
+### 2. Install Dependencies
+pip install -r requirements.txt
 
-🧬 Data Structure (Sample)
-cli_recommendation.csv
 
-Customer_ID,Product_ID,Category,Subcategory,Probability
-C1007,P2360,Home Decor,wall art,0.99
-...
+## 🚀 Run the Project
+   Option 1: Run from Terminal
+      python scripts/recommendation.py
 
-📦 Future Enhancements
-🧠 Gen AI chatbot integration (text-to-recommendation)
+   Option 2: Run the GUI Application
+      python scripts/gui_recommendation.py
 
-🌐 Web UI with React and Express backend
 
-🧺 Smart cart suggestions with bundling logic
+📊 Sample Outputs
+   Top 3 recommendations: outputs/top_3_recommendations.xlsx
 
-🕵️‍♂️ Behavior tracking with real-time analytics
+   Filtered recommendations: outputs/filtered_recommendations_C1007.xlsx
 
-🎨 Gen AI product image generation
-```
+   Chart: images/recommendation_chart.png
+
+📚 Dataset Info
+customer_data_collection.csv: User purchase behavior
+
+product_recommendation_data.csv: Product catalog and tags
+
+🛠️ Tech Stack
+      Python
+      Pandas, NumPy, Scikit-learn
+      Tkinter (GUI)
+      Matplotlib, Seaborn
+      Jupyter Notebook (EDA)
+      
+
+🤝 Contributors
+Priya Pal
+Rishabh Tiwari
+
+

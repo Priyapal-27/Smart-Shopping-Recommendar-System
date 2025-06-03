@@ -1,10 +1,14 @@
 import pandas as pd
+import os
+
+
+output_dir = "./outputs"
 
 # --------------------------
 # STEP 1: Load and Clean Datasets
 # --------------------------
-customers = pd.read_csv("customer_data_collection.csv")
-products = pd.read_csv("product_recommendation_data.csv")
+customers = pd.read_csv("./data/customer_data_collection.csv")
+products = pd.read_csv("./data/product_recommendation_data.csv")
 
 # Remove 'Unnamed' columns
 customers = customers.loc[:, ~customers.columns.str.contains('^Unnamed')]
@@ -108,13 +112,13 @@ for index, row in customers.head(10).iterrows():
     print("-" * 50)
 
 # Step 7: Save to CSV
-final_df.to_csv("top_3_recommendations.csv", index=False)
+final_df.to_csv(os.path.join(output_dir, "top_3_recommendations.csv"), index=False)
 print("\n✅ Final Top 3 recommendations saved to 'top_3_recommendations.csv'")
 
 # Optional: Save to Excel with formatting
-excel_path = "top_3_recommendations.xlsx"
+excel_path = os.path.join(output_dir, "top_3_recommendations.xlsx")
 with pd.ExcelWriter(excel_path, engine='xlsxwriter') as writer:
-    final_df.to_excel(writer, sheet_name='Recommendations', index=False)
+    final_df.to_excel(writer, index=False)
 
 print(f"📄 Excel file also saved to: {excel_path}")
 
@@ -133,7 +137,7 @@ plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 
 # Save chart
-plt.savefig("recommendation_chart.png")
+plt.savefig(os.path.join(output_dir, "recommendation_chart.png"))
 print("\n📊 Bar chart saved as 'recommendation_chart.png'")
 
 # ----------------------------
